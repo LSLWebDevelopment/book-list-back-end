@@ -15,4 +15,8 @@ export class BooksService {
   async listAllBooks() {
     return await this.repository.find();
   }
+
+  async deleteBookById(id: number) {
+    return await this.repository.delete({ id });
+  }
 }
