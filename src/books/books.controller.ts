@@ -6,12 +6,11 @@ import {
   Param,
   Patch,
   Post,
-  Put,
 } from '@nestjs/common';
 import { Book } from './book.entity';
 import { BooksService } from './books.service';
-import { BooksCreateDto } from './dtos/books-create.dto';
 import { BookEditDto } from './dtos/book-edit.dto';
+import { BooksCreateDto } from './dtos/books-create.dto';
 
 @Controller('/books')
 export class BooksController {

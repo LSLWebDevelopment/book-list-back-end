@@ -27,6 +27,6 @@ export class BooksService {
       throw new NotFoundException('Book not found');
     }
     Object.assign(book, attrs);
-    return this.repository.save(book);
+    return await this.repository.save(book);
   }
 }
