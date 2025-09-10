@@ -11,4 +11,8 @@ export class BooksService {
     const bookEntity = this.repository.create({ title });
     return this.repository.save(bookEntity);
   }
+
+  async listAllBooks() {
+    return await this.repository.find();
+  }
 }
